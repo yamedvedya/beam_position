@@ -79,8 +79,8 @@ class BeamPosition(QtWidgets.QMainWindow):
     # ----------------------------------------------------------------------
     def _refresh_coordinates(self):
 
-        arrows = {'x': [u'\U0001F880', u'\U0001F882'],
-                  'y': [u'\U0001F883', u'\U0001F881']}
+        arrows = {'x': [u'\u25C0', u'\u25B6'],
+                  'y': [u'\u25BC', u'\u25B2']}
 
         for corr in ['x', 'y']:
             getattr(self._ui, f'lb_ref_{corr}').setText(f'{self.reference[corr]:.3f}')
